@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,700&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+  
+}
+.navbar{
+  position: fixed;
+  width: 100%;
+  padding: 11px;
+  background: rgb(3, 3, 63);
+  font-family: 'ubuntu', sans-serif;
+}
+
+.max-width{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between
+}
+.logo {
+  width: 50%;
+  margin-left: 20px;
+
+}
+.menu {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+
+}
+
+.logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+.logo a span{
+    color:red;
+    font-family: 'ubuntu', sans-serif;
+}
+.menu div{
+ margin-top: 8px;
+}
+.menu div a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+.menu div a:hover{
+    color: red;
+}
+.home{
+    display: flex;
+    /* background: url("Image/ipl.jpg")   center; */
+    background-color: red;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'ubuntu', sans-serif;
+}
+.home  .max-width{
+       margin-top: 100px;
+       margin-left: 40px;
+}
+
+.home .home-content .text-2{
+     font-size: 27px;
+    
+}
+.home .home-content .text-1{
+    font-size: 50px;
+    font-weight: 500;
+}
+.home .home-content .text-3{
+    font-size: 35px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 .span a{
+    font-weight: 500;
+    color: red;
+    text-decoration: none;
+}
+.home .home-content .text-3 a:hover{
+  color: blue;
+}
+.home .match{
+    color: white;
+    font-size: 15px;
+    margin-top: 100px;
+    margin-right: 175px;
+    font-family: 'ubuntu', sans-serif;
+    
+}
+/* flip card*/
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+
+  }
+  
+  img {
+    border-radius: 10px 10px 10px 10px;
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #5d656b;
+    color: rgb(26, 28, 117);
+    transform: rotateY(180deg);
+    border-radius: 10px 10px 10px 10px;
+  }
+  /*add menu button */
+.menu-btn div{
+    width: 29px;
+    height: 3px;
+    background-color:white;
+    margin: 6px 0;
+}
+.contact{
+  display: flex;
+    background-color: greenyellow;
+    height: 100vh;
+    color: black;
+    min-height: 500px;
+    font-family: 'ubuntu', sans-serif;
+    
+}
+.text-contact{
+  margin-top: 60px;
+  padding: 50px;
+}
+.text-contact h2{
+  font-size: 30px;
+}
+.address-text p{
+  padding: 2px;
+}
+
+.icon{
+  padding-top: 12px;
+}
+
+.send-message{
+  padding-top: 110px;
+  padding-left: 60px;
+}
+.name, .email, .message{
+  background-color: white;
+  width: 600px;
+  height: 40px;
+  margin-top: 10px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border-color:black;
+  border-width: 1px;
+}
+.send-button{
+  background-color: #FF5733 ;
+  border: none;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.services{
+  display: flex;
+    height: 100vh;
+    background-color: rgb(37, 172, 160);
+    min-height: 500px;
+    font-family: 'ubuntu', sans-serif;
+}
+.basic{
+  background-color: red;
+  width: 30%;
+  height: 60%;
+  margin: 85px;
+}
+.pro{
+ margin:85px;
+ background-color: rgb(16, 145, 59);
+ width: 30%;
+ height:60%;
+}
+.premium{
+ margin: 85px;
+ background-color: rgb(28, 36, 146);
+ width: 30%;
+ height: 60%;
+}
+.winingzone{
+  display: flex;
+    background-color: lightseagreen;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'ubuntu', sans-serif;
+}
+.about{
+  display: flex;
+  background-color: hotpink;
+  height: 100vh;
+  color: #fff;
+  min-height: 500px;
+  font-family: 'ubuntu', sans-serif;
+}
+
+/*responsive media */
+   /* @media (max-width: 990px){
+    .max-width{
+      padding: 0 50px;
+    }
+    .navbar .logo{
+      margin-left: -40px;
+
+    }
+    .navbar .logo a {
+      font-size: 27px;
+    }
+    .navbar .logo a span{
+      font-size: 27px;
+    }
+    .home{
+      background: rgb(27, 76, 211);
+    }
+    .menu-btn{
+      display: block;
+      z-index: 999;
+      margin-right: -28px;
+    }
+    .navbar .menu{
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      left: -100%;
+      top: 0;
+       background: black;
+       padding-top: 80px;
+    }
+    .navbar .menu .active{
+      left: 0;
+    }
+    .navbar .menu li{
+      display: block;
+    }
+    .navbar .menu li a{
+      display: inline-block;
+      margin: 20px 0;
+      font-size: 25px;
+    }
+  } */
+  
